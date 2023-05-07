@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.map_area{
+    background-image: url(image/vintage_map.jpg);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    
+}
+h1 {
+    color: #722c29;
+    margin-bottom: 20px;
+}
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.key {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border: 2px solid #722c29;
+    background-color: #9c654f7a;
+    color: #722c29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 45px;
+}
+.key.active {
+    border: 2px solid #722c29;
+    color: #722c29;
+    background-color: #c9986486;
+}
+
+.composer {
+    width: 260px;
+    margin-top: 20px;
+}
+.composer #input {
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding: 10px 15px;
+}
+input{
+    border: transparent;
+    background-color: #9c654f7a;
+    border: 2px solid #722c29;
+    color: #722c29;
+    font-weight: bold;
+}
+::placeholder{
+    color: #722c29;
+}
+.composer button {
+    width: 100%;
+    height: 40px;
+    background: #9c654f7a;
+    border: 2px solid #722c29;
+    color: #722c29;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.composer button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin-top: 20px;
+    color: #722c29;
+    font-size: 13px;
+    font-weight: BOLD;
+}
