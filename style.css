@@ -20,10 +20,44 @@ h1 {
     color: #722c29;
     margin-bottom: 20px;
 }
-.keys {
+.keys{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.grid_row{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+    justify-content: center;
+}
+.keyw,
+.keyn{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.keyq,
+.keyv{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.keye,
+.keyb{
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.keya,
+.keyx{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.keys,
+.keyc{
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.keyz{
+    grid-column-start: 8;
+    grid-column-end: 9;
 }
 .key {
     width: 80px;
