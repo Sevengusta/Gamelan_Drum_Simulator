@@ -1,5 +1,6 @@
 # Gamelan_Drum_Simulator
 <h3>Objetivo do projeto:</h3>
+
 O objtevo final do projeto foi utilizar os recursos de capturar o que era digitado no com o teclado através de funções, e acionar sons a medida que a as ações de click ou com o teclado fossem disparadas. 
 
 <br>
