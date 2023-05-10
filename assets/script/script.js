@@ -10,17 +10,17 @@ document.body.addEventListener('keyup', (event) => {
     playSound(event.code.toLowerCase())
 })
 document.querySelector('.composer button.guess').addEventListener('click', () => {
-    let song = document.querySelector('#input').value;
+    let song = document.querySelector('#input').value.toLowerCase();
     
     if (song == document.querySelector('.game_result').innerHTML){
-        playComposition(song);
+        playComposition(song.toLowerCase());
         document.querySelector('h5').innerHTML = 'right combination!';
         document.querySelector('.image_area').classList.remove('hide');
         document.querySelector('.treasure').classList.remove('hide');
         document.querySelector('.death').classList.add('hide');
 
     } else if (song !== '' && song !== document.querySelector('.game_result').innerHTML){
-        playComposition(song);
+        playComposition(song.toLowerCase());
         document.querySelector('h5').innerHTML = 'wrong combination!'
         document.querySelector('.image_area').classList.remove('hide');
         document.querySelector('.death').classList.remove('hide');
@@ -64,7 +64,7 @@ easy = document.querySelector('.composer button.easy').addEventListener('click',
     playEasyComposition(result);
     document.querySelector('.game_result').innerHTML = result
 })
-function playEasyComposition(songArray  ){
+function playEasyComposition(songArray){
     let wait = 0;
     for(let songItem of songArray){
 
@@ -94,12 +94,12 @@ document.querySelector('.composer button.normal').addEventListener('click', () =
     playEasyComposition(result);
     document.querySelector('.game_result').innerHTML = result
 })
-function playNormalComposition(normal){
+function playNormalComposition(songArray){
     let wait = 0;
-    for(let normal of songArray){
+    for(let songItem of songArray){
 
         setTimeout(() => {
-            playSound(`key${normal}`);
+            playSound(`key${songItem}`);
             
         }, wait)
 
@@ -112,12 +112,12 @@ document.querySelector('.composer button.hard').addEventListener('click', () => 
     playEasyComposition(result);
     document.querySelector('.game_result').innerHTML = result
 })
-function playHardComposition(hard){
+function playHardComposition(songArray){
     let wait = 0;
-    for(let hard of songArray){
+    for(let songItem of songArray){
 
         setTimeout(() => {
-            playSound(`key${hard}`);
+            playSound(`key${songItem}`);
             
         }, wait)
 
