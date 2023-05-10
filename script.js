@@ -8,17 +8,23 @@ function randomizer (){
 // ações com o botão de tocar a música
 document.body.addEventListener('keyup', (event) => {
     playSound(event.code.toLowerCase())
-
 })
 document.querySelector('.composer button.guess').addEventListener('click', () => {
     let song = document.querySelector('#input').value;
     
     if (song == document.querySelector('.game_result').innerHTML){
         playComposition(song);
-        document.querySelector('h5').innerHTML = 'right combination!'
+        document.querySelector('h5').innerHTML = 'right combination!';
+        document.querySelector('.image_area').classList.remove('hide');
+        document.querySelector('.treasure').classList.remove('hide');
+        document.querySelector('.death').classList.add('hide');
+
     } else if (song !== '' && song !== document.querySelector('.game_result').innerHTML){
         playComposition(song);
         document.querySelector('h5').innerHTML = 'wrong combination!'
+        document.querySelector('.image_area').classList.remove('hide');
+        document.querySelector('.death').classList.remove('hide');
+        document.querySelector('.treasure').classList.add('hide');
     }
 })
 function playSound(sound) {
@@ -118,4 +124,3 @@ function playHardComposition(hard){
         wait += 350;
     }
 }
-// pegando o resultado das composições aleatórias
