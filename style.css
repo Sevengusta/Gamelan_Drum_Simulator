@@ -60,14 +60,18 @@ h1 {
     grid-column-start: 8;
     grid-column-end: 9;
 }
-.grid_row h5{
+.game_area{
     color: #722c29;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
     grid-column-start: 2;
     grid-column-end: 8;
+}
+.game_area h5{
+    font-size: 20px;
+    margin-right: 5px;
+
 }
 .key {
     width: 50px;
@@ -128,7 +132,7 @@ footer {
     font-size: 13px;
     font-weight: BOLD;
 }
-.game_area{
+.game_options{
     display: flex;
 }
 button.game{
@@ -136,4 +140,14 @@ button.game{
 }
 button.game:last-child{
     border: 2px solid #722c29;
+}
+.image_area{
+    width: 30px;
+    height: 30px;
+}
+.image_area img{
+    width: 100%;
+}
+.hide{
+    display: none;
 }
