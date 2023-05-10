@@ -1,4 +1,6 @@
 # Gamelan_Drum_Simulator
+![image](https://github.com/Sevengusta/Gamelan_Drum_Simulator/assets/129140834/3efeda24-ab09-41aa-b329-451179ec9508)
+
 <h3>Objetivo do projeto:</h3>
 
 O objtevo final do projeto foi utilizar os recursos de capturar o que era digitado no com o teclado através de funções, e acionar sons a medida que a as ações de click ou com o teclado fossem disparadas. Então, criar um jogo da memória, a medida que os sons eram tocados. 
