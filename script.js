@@ -5,19 +5,24 @@ function randomizer (){
     let index = Math.floor(Math.random() *keys.length);
     return keys[index];
 }
+// ações com o botão de tocar a música
 document.body.addEventListener('keyup', (event) => {
     playSound(event.code.toLowerCase())
 
 })
 document.querySelector('.composer button.guess').addEventListener('click', () => {
     let song = document.querySelector('#input').value;
-
-    if (song !== ''){
-        let songArray = song.split('');
-        playComposition(songArray);
-        };
+    
+    if (song == document.querySelector('.game_result').innerHTML){
+        playComposition(song);
+        document.querySelector('h5').innerHTML = 'right combination!'
+    } else if (song !== '' && song !== document.querySelector('.game_result').innerHTML){
+        playComposition(song);
+    }else {
+        playComposition(song);
+        document.querySelector('h5').innerHTML = 'wrong combination!'
     }
-)
+})
 function playSound(sound) {
     let audioElement = document.querySelector(`#s_${sound}`)
     
@@ -44,21 +49,23 @@ function playComposition(songArray){
             playSound(`key${songItem}`);
             
         }, wait)
-
+        
         wait += 350;
     }
 }
 
 // composição fácil
-let easy = document.querySelector('.composer button.easy').addEventListener('click', () => {
-     playEasyComposition(randomizer() + randomizer() + randomizer());
+easy = document.querySelector('.composer button.easy').addEventListener('click', () => {
+    result = randomizer() + randomizer() + randomizer()
+    playEasyComposition(result);
+    document.querySelector('.game_result').innerHTML = result
 })
-function playEasyComposition(easy){
+function playEasyComposition(songArray  ){
     let wait = 0;
-    for(let easy of songArray){
+    for(let songItem of songArray){
 
         setTimeout(() => {
-            playSound(`key${easy}`);
+            playSound(`key${songItem}`);
             
         }, wait)
 
@@ -79,7 +86,9 @@ function playEasyComposition(songArray){
 }
 // composição normal
 document.querySelector('.composer button.normal').addEventListener('click', () => {
-    playComposition(randomizer() + randomizer() + randomizer() + randomizer() + randomizer());
+    result = randomizer() + randomizer() + randomizer() + randomizer() + randomizer()
+    playEasyComposition(result);
+    document.querySelector('.game_result').innerHTML = result
 })
 function playNormalComposition(normal){
     let wait = 0;
@@ -95,7 +104,9 @@ function playNormalComposition(normal){
 }
 // composição normal
 document.querySelector('.composer button.hard').addEventListener('click', () => {
-    playComposition(randomizer() + randomizer() + randomizer() + randomizer() + randomizer() + randomizer() + randomizer() );
+    result = randomizer() + randomizer() + randomizer() + randomizer() + randomizer() + randomizer() + randomizer()
+    playEasyComposition(result);
+    document.querySelector('.game_result').innerHTML = result
 })
 function playHardComposition(hard){
     let wait = 0;
