@@ -18,8 +18,6 @@ document.querySelector('.composer button.guess').addEventListener('click', () =>
         document.querySelector('h5').innerHTML = 'right combination!'
     } else if (song !== '' && song !== document.querySelector('.game_result').innerHTML){
         playComposition(song);
-    }else {
-        playComposition(song);
         document.querySelector('h5').innerHTML = 'wrong combination!'
     }
 })
@@ -120,3 +118,4 @@ function playHardComposition(hard){
         wait += 350;
     }
 }
+// pegando o resultado das composições aleatórias
