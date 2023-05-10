@@ -7,8 +7,11 @@ Criar um jogo da memória com base nos soms que são emitidos na tela, com base 
 
 <h3>Eventos:</h3>
 Caso o jogador erre a sequência, aparecerá na tela o evento:
+
 ![wrong combination](https://github.com/Sevengusta/Gamelan_Drum_Simulator/assets/129140834/81eb8a35-446c-4642-a3af-76707679fe30)
+
  Caso o jogador acerte a sequência, aparecerá na tela a seguinte mensagem:
+ 
  ![right combination](https://github.com/Sevengusta/Gamelan_Drum_Simulator/assets/129140834/5eda6d9e-63fc-43fc-a6af-2d05ecc3fc92)
 
 
