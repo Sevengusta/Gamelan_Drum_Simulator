@@ -25,7 +25,13 @@
             </div>
             <div class="grid_row">
                 <div data-key="keyd" class="key keyd">D</div>
-                <h5 gridpan="3">choose your sound</h5>
+                <div class="game_area">
+                    <h5 gridpan="3">choose your sound</h5> 
+                    <div gridpan="3" class="image_area hide"> 
+                        <img class="treasure hide" src="./image/treasure.png"> 
+                        <img class="death hide" src="./image/death.png"> 
+                    </div>
+                </div>
                 <div data-key="keyz" class="key keyz">Z</div>
             </div>
             <div class="grid_row">
@@ -44,7 +50,7 @@
         <div class="composer">
             <input type="text" id="input" placeholder="Faça uma composição..." />
             <button class="guess">Tocar</button>
-            <div class="game_area">
+            <div class="game_options">
                 <button class="game easy" onclick="">easy</button>
                 <button class="game normal" onclick="">normal</button>
                 <button class="game hard" onclick="">hard</button>
