@@ -3,9 +3,9 @@
 ![image](https://github.com/Sevengusta/Gamelan_Drum_Simulator/assets/129140834/3efeda24-ab09-41aa-b329-451179ec9508)
 
 <ul> <strong><h3>Features list:</h3></strong>
-  <li><strong>Easy:</strong> são disparados na tela 3 soms, os quais o jogador criará sua própria composição para advinhar.</li>
-  <li><strong>Normal:</strong> são disparados na tela 5 soms, os quais o jogador criará sua própria composição para advinhar.</li>
-  <li><strong>Hard:</strong> são disparados na tela 7 soms, os quais o jogador criará sua própria composição para advinhar.</li>
+  <li><strong>Easy:</strong> são disparados na tela 3 sons, os quais o jogador criará sua própria composição para advinhar.</li>
+  <li><strong>Normal:</strong> são disparados na tela 5 sons, os quais o jogador criará sua própria composição para advinhar.</li>
+  <li><strong>Hard:</strong> são disparados na tela 7 sons, os quais o jogador criará sua própria composição para advinhar.</li>
 </ul>
 
 <h3>Objetivo do projeto:</h3>
